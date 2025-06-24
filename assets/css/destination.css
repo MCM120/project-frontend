@@ -1,0 +1,219 @@
+body {
+    background-image: url(../destination/background-destination-desktop.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/*content destination*/
+
+.container-destination {
+    height: 792px;
+    width: 1110px;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    padding: 0 27px;
+    justify-content: space-between;
+    height: 734px;
+}
+
+.card-info {
+    width: 445px;
+}
+
+.destination-details {
+    display: flex;
+    align-items: center;
+    height: 61px;
+}
+
+.details-column {
+    width: 210.5px;
+    display: flex;
+    flex-flow: column;
+}
+
+.destinations-btn {
+    display: flex;
+    height: 32px;
+    position: absolute;
+    z-index: 2;
+    left: 39.9rem;
+    transform: translateY(7.5rem);
+}
+
+.btn {
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+.btn.active {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.btn.regular-opt:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn span {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 16px;
+    color: #d0d6f9;
+    letter-spacing: 2px;
+}
+
+.card-title span {
+    font-family: "Bellefair", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 96px;
+    color: #FFFFFF;
+}
+
+.card-text p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    color: #d0d6f9;
+    line-height: 180%;
+}
+
+hr {
+    color: #FFFFFF;
+    margin: 40px 0;
+}
+
+.details-column span {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 14px;
+    color: #d0d6f9;
+    letter-spacing: 2px;
+}
+
+.details-column a {
+    font-family: "Bellefair", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 28px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-top: 12px;
+}
+
+@media (max-width:1150px) {
+
+    body {
+        background-image: url(../destination/background-destination-tablet.jpg);
+    }
+
+    .container-destination {
+        width: 688px;
+        transform: translateX(0.2rem);
+    }
+
+    .card-content {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 0 0 50px 0;
+        justify-content: center;
+        height: auto;
+        width: 688px;
+    }
+
+    .carousel-img {
+        width: 300px;
+        height: 300px;
+        padding: 42px 0;
+    }
+
+    .card-info {
+        margin-top: 7rem;
+        width: 514px;
+        text-align: center;
+    }
+
+    .destination-details {
+        justify-content: center;
+    }
+
+    .destinations-btn {
+        height: 32px;
+        left: 13.35rem;
+        transform: translateY(28rem);
+    }
+
+    .card-title span {
+        font-size: 80px;
+    }
+
+    .card-text p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:850px) {
+    body {
+        background-image: url(../destination/background-destination-mobile.jpg);
+    }
+}
+
+@media (max-width:675px) {
+
+    .container-destination {
+        width: 327px;
+    }
+
+    .destinations-btn {
+        height: 32px;
+        left: 2rem;
+        transform: translateY(17rem);
+    }
+
+    .card-content {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 0 0 50px 0;
+        justify-content: center;
+        height: auto;
+        width: 327px;
+    }
+
+    .carousel-img {
+        width: 150px;
+        height: 150px;
+        padding: 42px 0;
+    }
+
+    .card-info {
+        margin-top: 6rem;
+        width: 327px;
+    }
+
+    .destination-details {
+        flex-flow: column;
+    }
+
+    .details-column {
+        margin-top: 26px;
+    }
+
+    .card-title span {
+        font-size: 56px;
+    }
+
+    .card-text p {
+        font-size: 15px;
+    }
+}

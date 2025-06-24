@@ -1,0 +1,254 @@
+body {
+    background-image: url(../technology/background-technology-desktop.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden
+}
+
+/*content technolofy */
+
+.content-div-tech {
+    padding: 48px 0;
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+}
+
+.container-tech {
+    width: 1275px;
+    height: 792px;
+    margin-left: 15rem;
+}
+
+.carousel-img {
+    width: 608px;
+    height: 600px;
+    background-size: cover;
+}
+
+.carousel-img.vehicle {
+    background-image: url(../technology/image-launch-vehicle-portrait.jpg);
+}
+
+.carousel-img.capsule {
+    background-image: url(../technology/image-space-capsule-portrait.jpg);
+}
+
+.carousel-img.spaceport {
+    background-image: url(../technology/image-spaceport-portrait.jpg);
+}
+
+.carousel-tech {
+    position: relative;
+    width: 1275px;
+    height: 734px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-tech .cards {
+    position: absolute;
+    width: 100%;
+    clip-path: inset(0 0 100% 0);
+    z-index: -1;
+}
+
+.carousel-tech .cards.active {
+    clip-path: inset(0 0 0 0);
+    transition: 1s;
+    transition-property: clip-path;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    height: 734px;
+    width: 1131px;
+    justify-content: space-between;
+    float: right;
+}
+
+.card-info {
+    width: 491px;
+}
+
+.num-btn {
+    margin-right: 64px;
+    transform: translateY(0.9rem);
+}
+
+.btn {
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Bellefair", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 32px;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.btn.active {
+    background-color: #FFFFFF;
+    color: #0b0d17;
+}
+
+.btn.regular-opt:hover {
+    border-color: #FFFFFF;
+}
+
+.btn-info {
+    display: flex;
+    align-items: center;
+    height: 301px hug;
+}
+
+@media (max-width:1515px) and (min-width: 1348px) {
+    .container-tech {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width:1348px) {
+
+    .title-left {
+        position: absolute;
+        left: 5rem;
+        top: 12rem;
+    }
+
+    .container-tech {
+        margin-left: 0;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-tech {
+        width: 688px;
+        height: 848px;
+    }
+
+    .card-content {
+        display: flex;
+        flex-flow: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 688px;
+        height: 1100px;
+        float: none;
+    }
+
+    .carousel-img {
+        width: 688px;
+        height: 421px;
+        background-size: cover;
+        margin: 17rem 0 10rem 0;
+    }
+
+    .carousel-img.vehicle {
+        background-image: url(../technology/image-launch-vehicle-landscape.jpg);
+    }
+
+    .carousel-img.capsule {
+        background-image: url(../technology/image-space-capsule-portrait.jpg);
+    }
+
+    .carousel-img.spaceport {
+        background-image: url(../technology/image-spaceport-landscape.jpg);
+    }
+
+    .num-btn {
+        position: absolute;
+        left: 14rem;
+        top: 35rem;
+        margin-right: 0;
+        transform: translateY(0rem);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-info {
+        width: 512px;
+        text-align: center;
+    }
+
+    .btn {
+        width: 56px;
+        height: 56px;
+        font-size: 24px;
+        margin-bottom: 0;
+        margin-left: 16px;
+    }
+
+}
+
+@media (max-width: 1150px) {
+
+    .content-div-tech {
+        padding: 0;
+        margin-top: 8rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .title-left {
+        position: absolute;
+        left: 5rem;
+        top: 9rem;
+    }
+
+    .carousel-img {
+        margin: 10rem 0 10rem 0;
+    }
+}
+
+@media (max-width: 675px) {
+
+    .title-left {
+        position: absolute;
+        left: 2.5rem;
+        top: 8rem;
+    }
+
+    .carousel-img {
+        width: 100%;
+        height: 258px;
+        margin: 0 0 10rem 0;
+    }
+
+    .num-btn {
+        top: 26rem;
+        left: 2.75rem;
+    }
+
+    .card-info {
+        width: 327px;
+    }
+
+    .carousel-tech {
+        width: 327px;
+    }
+
+    .card-content {
+        display: flex;
+        flex-flow: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 327px;
+        height: 700px;
+        float: none;
+    }
+
+}

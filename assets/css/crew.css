@@ -1,0 +1,125 @@
+body {
+    background-image: url(../crew/background-crew-desktop.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden
+}
+
+/*content crew*/
+
+.container-crew {
+    width: 1110px;
+    height: 792px;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 734px;
+}
+
+.card-info {
+    width: 539px;
+}
+
+.bullet-btn {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    margin-bottom: 48px;
+}
+
+.btn {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    margin-right: 40px;
+    background-color: #FFFFFF;
+    opacity: 17.44%;
+    cursor: pointer;
+}
+
+.btn.active {
+    opacity: 100%;
+}
+
+.btn.regular-opt:hover {
+    opacity: 50.01%;
+}
+
+@media (max-width: 1150px) {
+    body {
+        background-image: url(../crew/background-crew-tablet.jpg);
+    }
+
+    .container-crew {
+        width: 688px;
+        height: 848px;
+        transform: translateX(0.2rem);
+    }
+
+    .card-content {
+        flex-flow: column;
+        justify-content: center;
+        height: auto;
+        text-align: center;
+    }
+
+    .card-info {
+        width: 512px;
+        margin: 3rem 0 10rem 0;
+    }
+
+    .title-spacing {
+        margin-bottom: 2rem;
+    }
+
+    .carousel-img {
+        width: 446.8px;
+    }
+
+    .btn {
+        width: 10px;
+        height: 10px;
+        margin-right: 16px;
+    }
+
+    .bullet-btn {
+        bottom: 22rem;
+        left: 19rem;
+        z-index: 3;
+        margin-bottom: 48px;
+    }
+}
+
+@media (max-width: 675px) {
+    body {
+        background-image: url(../crew/background-crew-mobile.jpg);
+    }
+
+    .container-crew {
+        width: 327px;
+        height: 848px;
+    }
+
+    .card-info {
+        width: 327px;
+        margin: 3rem 0 10rem 0;
+    }
+
+    .title-spacing {
+        margin-bottom: 2rem;
+    }
+
+    .carousel-img {
+        width: 272.27px;
+    }
+
+    .bullet-btn {
+        left: 7.5rem;
+    }
+}
